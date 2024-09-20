@@ -68,6 +68,7 @@ function buttonClicked(event) {
   }
 
   count++;
+  checkNumber();
   if (count === 4) {
     unlock();
   }
@@ -89,3 +90,39 @@ function buttonClicked(event) {
   document.getElementById("classlist").appendChild(newLi);
   changetotalbill();
 }
+
+const nextBtn = document.getElementById("nextBtn");
+nextBtn.classList.add("btn-disabled", "bg-[#D5D6D9]", "text-[#B0B3B9]");
+
+function checkNumber() {
+  const number = document.getElementById("number").value;
+  const name = document.getElementById("name").value.trim();
+  if (number.length === 11 && count != 0 && name != "") {
+    nextBtn.classList.remove("btn-disabled", "bg-[#D5D6D9]", "text-[#B0B3B9]");
+  } else {
+    nextBtn.classList.add("btn-disabled", "bg-[#D5D6D9]", "text-[#B0B3B9]");
+  }
+}
+function previouspage(event) {
+  nextPage();
+  document.getElementById("number").value = "";
+  document.getElementById("name").value = "";
+}
+document.getElementById("next").addEventListener("click", previouspage);
+
+const next = document.getElementById("next");
+
+function makeAllClear() {
+  document.querySelectorAll("body > *").forEach((child) => {
+    child.classList.toggle("hidden");
+  });
+}
+
+document.getElementById("number").addEventListener("keyup", checkNumber);
+document.getElementById("name").addEventListener("keyup", checkNumber);
+
+function nextPage() {
+  makeAllClear();
+}
+
+nextBtn.addEventListener("click", nextPage);
