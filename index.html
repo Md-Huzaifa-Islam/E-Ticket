@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-ticket</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="mt-10 space-y-8 px-5 md:container md:mx-auto">
+      <!-- NAV SECTION  -->
+      <nav class="flex items-center justify-between font-raleway">
+        <!-- brand logo  -->
+        <a href="./index.html" class="text-4xl font-extrabold text-[#030712]"
+          >H-Ticket</a
+        >
+        <!-- OPTION LIST  -->
+        <ul class="flex items-center space-x-14">
+          <li class="btn btn-ghost text-lg font-medium text-[#030712B2]">
+            Home
+          </li>
+          <li class="btn btn-ghost text-lg font-medium text-[#030712B2]">
+            About
+          </li>
+          <li class="btn btn-ghost text-lg font-medium text-[#030712B2]">
+            Destination
+          </li>
+          <li class="btn btn-ghost text-lg font-medium text-[#030712B2]">
+            Search
+          </li>
+        </ul>
+        <!-- NAVBAR BUTTON  -->
+        <button
+          class="flex items-center space-x-2 rounded-xl border-[1px] border-[#1DD100] bg-[#1cd1002c] stroke-[#1DD100] px-8 py-3 text-xl font-bold text-[#1DD100] hover:bg-[#1DD100] hover:stroke-white hover:text-white"
+        >
+          <p>Bus</p>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10"
+              stroke="#FFFFFF"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg> -->
+        </button>
+      </nav>
+      <!-- HERO SECTION  -->
+      <section
+        class="relative rounded-[32px] bg-gradient-to-b from-gray-950 to-gray-950 bg-cover bg-center bg-no-repeat pb-[140px] pt-[75px] bg-blend-overlay"
+        style="background-image: url(&quot;./assets/images/banner.png&quot;)"
+      >
+        <!-- INNER TEXT SECTION  -->
+        <div class="mx-auto flex max-w-2xl flex-col items-center">
+          <p
+            class="text-center font-raleway text-6xl/snug font-extrabold text-white"
+          >
+            End-to-End Travel with<br /><span class="text-[#1DD100]"
+              >H Paribahan</span
+            >
+          </p>
+          <p class="pt-4 text-center font-inter text-lg/[30px] text-white">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <button
+            class="mt-8 rounded-xl border border-transparent bg-[#1DD100] px-8 py-4 font-raleway text-xl font-bold text-[#030712] hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100]"
+          >
+            Buy Tickets
+          </button>
+        </div>
+
+        <!-- STAT SECTION  -->
+        <div
+          class="absolute -bottom-16 left-1/2 flex w-max -translate-x-1/2 space-x-6 font-inter"
+        >
+          <!-- STAT 1 -->
+          <div
+            class="flex items-center space-x-4 rounded-3xl border-b-[3px] border-[#1DD100] bg-white p-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+            >
+              <path
+                d="M21.3333 56V53.3333C21.3333 51.9188 21.8952 50.5623 22.8954 49.5621C23.8956 48.5619 25.2522 48 26.6667 48H37.3333C38.7478 48 40.1044 48.5619 41.1046 49.5621C42.1048 50.5623 42.6667 51.9188 42.6667 53.3333V56M45.3333 26.6667H50.6667C52.0812 26.6667 53.4377 27.2286 54.4379 28.2288C55.4381 29.229 56 30.5855 56 32V34.6667M8 34.6667V32C8 30.5855 8.5619 29.229 9.5621 28.2288C10.5623 27.2286 11.9188 26.6667 13.3333 26.6667H18.6667M26.6667 34.6667C26.6667 36.0812 27.2286 37.4377 28.2288 38.4379C29.229 39.4381 30.5855 40 32 40C33.4145 40 34.771 39.4381 35.7712 38.4379C36.7714 37.4377 37.3333 36.0812 37.3333 34.6667C37.3333 33.2522 36.7714 31.8956 35.7712 30.8954C34.771 29.8952 33.4145 29.3333 32 29.3333C30.5855 29.3333 29.229 29.8952 28.2288 30.8954C27.2286 31.8956 26.6667 33.2522 26.6667 34.6667ZM40 13.3333C40 14.7478 40.5619 16.1044 41.5621 17.1046C42.5623 18.1048 43.9188 18.6667 45.3333 18.6667C46.7478 18.6667 48.1044 18.1048 49.1046 17.1046C50.1048 16.1044 50.6667 14.7478 50.6667 13.3333C50.6667 11.9188 50.1048 10.5623 49.1046 9.5621C48.1044 8.5619 46.7478 8 45.3333 8C43.9188 8 42.5623 8.5619 41.5621 9.5621C40.5619 10.5623 40 11.9188 40 13.3333ZM13.3333 13.3333C13.3333 14.7478 13.8952 16.1044 14.8954 17.1046C15.8956 18.1048 17.2522 18.6667 18.6667 18.6667C20.0812 18.6667 21.4377 18.1048 22.4379 17.1046C23.4381 16.1044 24 14.7478 24 13.3333C24 11.9188 23.4381 10.5623 22.4379 9.5621C21.4377 8.5619 20.0812 8 18.6667 8C17.2522 8 15.8956 8.5619 14.8954 9.5621C13.8952 10.5623 13.3333 11.9188 13.3333 13.3333Z"
+                stroke="#1DD100"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="space-y-1">
+              <p class="text-4xl font-bold text-[#030712]">500K+</p>
+              <p class="text-lg text-[#03071299]">Registered users</p>
+            </div>
+          </div>
+          <!-- STAT 2 -->
+          <div
+            class="flex items-center space-x-4 rounded-3xl border-b-[3px] border-[#1DD100] bg-white p-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+            >
+              <path
+                d="M40 13.3334V18.6667M40 29.3334V34.6667M40 45.3334V50.6667M13.3333 13.3334H50.6667C52.0812 13.3334 53.4377 13.8953 54.4379 14.8955C55.4381 15.8957 56 17.2522 56 18.6667V26.6667C54.5855 26.6667 53.229 27.2286 52.2288 28.2288C51.2286 29.229 50.6667 30.5856 50.6667 32C50.6667 33.4145 51.2286 34.7711 52.2288 35.7713C53.229 36.7715 54.5855 37.3334 56 37.3334V45.3334C56 46.7479 55.4381 48.1044 54.4379 49.1046C53.4377 50.1048 52.0812 50.6667 50.6667 50.6667H13.3333C11.9188 50.6667 10.5623 50.1048 9.5621 49.1046C8.5619 48.1044 8 46.7479 8 45.3334V37.3334C9.41449 37.3334 10.771 36.7715 11.7712 35.7713C12.7714 34.7711 13.3333 33.4145 13.3333 32C13.3333 30.5856 12.7714 29.229 11.7712 28.2288C10.771 27.2286 9.41449 26.6667 8 26.6667V18.6667C8 17.2522 8.5619 15.8957 9.5621 14.8955C10.5623 13.8953 11.9188 13.3334 13.3333 13.3334Z"
+                stroke="#1DD100"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="space-y-1">
+              <p class="text-4xl font-bold text-[#030712]">1.7 lacks</p>
+              <p class="text-lg text-[#03071299]">Tickets sold</p>
+            </div>
+          </div>
+          <!-- STAT 3 -->
+          <div
+            class="flex items-center space-x-4 rounded-3xl border-b-[3px] border-[#1DD100] bg-white p-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+            >
+              <path
+                d="M42.6667 45.3333C42.6667 46.7478 43.2286 48.1044 44.2288 49.1046C45.229 50.1048 46.5855 50.6667 48 50.6667C49.4145 50.6667 50.771 50.1048 51.7712 49.1046C52.7714 48.1044 53.3333 46.7478 53.3333 45.3333M42.6667 45.3333C42.6667 43.9188 43.2286 42.5623 44.2288 41.5621C45.229 40.5619 46.5855 40 48 40C49.4145 40 50.771 40.5619 51.7712 41.5621C52.7714 42.5623 53.3333 43.9188 53.3333 45.3333M42.6667 45.3333H21.3333M53.3333 45.3333H58.6667V32M26.6667 13.3333H45.3333C52.696 13.3333 58.6667 21.6907 58.6667 32M58.6667 32H46.6667L42.6667 13.3333M25.3333 26.6667H45.3333M32 13.3333V26.6667M13.3333 24V53.3333M8 10.6667C8 9.95942 8.28095 9.28115 8.78105 8.78105C9.28115 8.28095 9.95942 8 10.6667 8H16C16.7072 8 17.3855 8.28095 17.8856 8.78105C18.3857 9.28115 18.6667 9.95942 18.6667 10.6667V21.3333C18.6667 22.0406 18.3857 22.7189 17.8856 23.219C17.3855 23.719 16.7072 24 16 24H10.6667C9.95942 24 9.28115 23.719 8.78105 23.219C8.28095 22.7189 8 22.0406 8 21.3333V10.6667Z"
+                stroke="#1DD100"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="space-y-1">
+              <p class="text-4xl font-bold text-[#030712]">80K+</p>
+              <p class="text-lg text-[#03071299]">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- OFFER SECTION  -->
+    <section
+      class="mt-48 flex flex-col items-center space-y-12 px-5 md:container md:mx-auto"
+    >
+      <p class="text-center font-raleway text-[40px] font-bold text-[#030712]">
+        Best offers for you
+      </p>
+      <div class="flex items-center justify-center gap-6">
+        <!-- COUPON CONTAINER 1 -->
+        <div
+          class="flex w-max items-center space-x-5 rounded-3xl bg-[#FFBF0F] px-12"
+        >
+          <div class="space-y-1 font-inter">
+            <p class="text-[40px] font-extrabold text-[#030712CC]">15% OFF</p>
+            <p class="text-xl font-semibold text-[#030712CC]">
+              on your next purchase
+            </p>
+            <p class="text-lg font-medium text-[#03071280]">
+              use by January 2024
+            </p>
+          </div>
+          <div class="">
+            <img
+              src="./assets/images/cupon-devider.png"
+              class="h-full"
+              alt=""
+            />
+          </div>
+          <div class="space-y-1 font-raleway">
+            <p class="text-3xl font-bold text-[#030712]">NEW15</p>
+            <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+          </div>
+        </div>
+        <!-- COUPON CONTAINER 2 -->
+        <div
+          class="flex w-max items-center space-x-5 rounded-3xl bg-[#F78C9C] px-12"
+        >
+          <div class="space-y-1 font-inter">
+            <p class="text-[40px] font-extrabold text-[#030712CC]">20% OFF</p>
+            <p class="text-xl font-semibold text-[#030712CC]">
+              on your next purchase
+            </p>
+            <p class="text-lg font-medium text-[#03071280]">
+              use by January 2024
+            </p>
+          </div>
+          <div class="">
+            <img
+              src="./assets/images/cupon-devider.png"
+              class="h-full"
+              alt=""
+            />
+          </div>
+          <div class="space-y-1 font-raleway">
+            <p class="text-3xl font-bold text-[#030712]">Couple 20</p>
+            <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <!-- Open the modal using ID.showModal() method -->
+      <button
+        class="rounded-xl border border-[#1DD100] bg-white px-8 py-4 font-raleway text-xl font-bold text-[#1DD100]"
+        onclick="my_modal_2.showModal()"
+      >
+        See All Offers
+      </button>
+      <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Sorry</h3>
+          <p class="py-4">No more offers available</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- TICKET SECTION -->
+    <section
+      class="mt-28 h-56 rounded-t-[88px] border-t-2 border-[#1DD100] bg-[#F7F8F8] px-5 py-28"
+    >
+      <!-- MAIN SECTION  -->
+      <div class="md:container md:mx-auto">
+        <!-- TEXT PART  -->
+      </div>
+    </section>
+  </body>
+</html>
