@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-ticket</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header class="mt-10 space-y-8 px-5 md:container md:mx-auto">
@@ -85,11 +86,13 @@
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </p>
-          <button
-            class="mt-8 rounded-xl border border-transparent bg-[#1DD100] px-8 py-4 font-raleway text-xl font-bold text-[#030712] hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100]"
+          <a href="#buyticket"
+            ><button
+              class="mt-8 rounded-xl border border-transparent bg-[#1DD100] px-8 py-4 font-raleway text-xl font-bold text-[#030712] hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100]"
+            >
+              Buy Tickets
+            </button></a
           >
-            Buy Tickets
-          </button>
         </div>
 
         <!-- STAT SECTION  -->
@@ -251,11 +254,573 @@
 
     <!-- TICKET SECTION -->
     <section
-      class="mt-28 h-56 rounded-t-[88px] border-t-2 border-[#1DD100] bg-[#F7F8F8] px-5 py-28"
+      id="buyticket"
+      class="mt-28 rounded-t-[88px] border-t-2 border-[#1DD100] bg-[#F7F8F8] px-5 py-28"
     >
       <!-- MAIN SECTION  -->
-      <div class="md:container md:mx-auto">
+      <div class="flex flex-col items-center md:container md:mx-auto">
         <!-- TEXT PART  -->
+        <div class="max-w-2xl space-y-4 text-center">
+          <p class="font-raleway text-[40px] font-bold text-[#030712]">
+            H Paribahan
+          </p>
+          <p class="texxt-[#03071299] font-inter text-lg">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- ROUTE SECTION  -->
+        <div
+          class="mb-6 mt-12 flex w-full items-center justify-between space-x-14 rounded-3xl bg-white px-8 pr-20"
+        >
+          <!-- Total seat section  -->
+          <div class="flex max-w-5xl grow flex-col gap-6 py-8">
+            <!-- SIT NUMBER DETAILS SECTION  -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="73"
+                    height="52"
+                    viewBox="0 0 73 52"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.85714 42.9522C8.85714 44.7708 9.57959 46.515 10.8656 47.8009C12.1515 49.0869 13.8957 49.8093 15.7143 49.8093C17.5329 49.8093 19.2771 49.0869 20.563 47.8009C21.849 46.515 22.5714 44.7708 22.5714 42.9522M8.85714 42.9522C8.85714 41.1336 9.57959 39.3894 10.8656 38.1035C12.1515 36.8175 13.8957 36.095 15.7143 36.095C17.5329 36.095 19.2771 36.8175 20.563 38.1035C21.849 39.3894 22.5714 41.1336 22.5714 42.9522M8.85714 42.9522H2V5.2379C2 4.32858 2.36122 3.45651 3.00421 2.81353C3.64719 2.17055 4.51926 1.80933 5.42857 1.80933H53.4286C57.9751 1.80933 62.3355 4.33789 65.5504 8.83876C68.7653 13.3396 70.5714 19.4441 70.5714 25.8093M22.5714 42.9522H50M50 42.9522C50 44.7708 50.7224 46.515 52.0084 47.8009C53.2944 49.0869 55.0385 49.8093 56.8571 49.8093C58.6758 49.8093 60.4199 49.0869 61.7059 47.8009C62.9918 46.515 63.7143 44.7708 63.7143 42.9522M50 42.9522C50 41.1336 50.7224 39.3894 52.0084 38.1035C53.2944 36.8175 55.0385 36.095 56.8571 36.095C58.6758 36.095 60.4199 36.8175 61.7059 38.1035C62.9918 39.3894 63.7143 41.1336 63.7143 42.9522M63.7143 42.9522H70.5714V25.8093M70.5714 25.8093H55.1429L50 1.80933M2 18.9522H53.4286M19.1429 1.80933V18.9522M36.2857 1.80933V18.9522"
+                      stroke="#030712"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p class="font-raleway text-3xl font-bold text-[#030712]">
+                    Greenline Paribahan
+                  </p>
+                  <p class="font-inter text-lg text-[#03071299]">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+              </div>
+              <!-- SITS LEFT  -->
+              <div
+                class="flex items-center space-x-2 rounded-xl bg-[#1cd1002c] stroke-[#1DD100] px-4 py-3 font-inter text-lg font-medium text-[#1DD100]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                >
+                  <path
+                    d="M5.83333 13.6427C6.45217 13.6427 7.04566 13.8885 7.48325 14.3261C7.92083 14.7637 8.16667 15.3572 8.16667 15.976V18.3093H19.8333V15.976C19.8333 15.3572 20.0792 14.7637 20.5168 14.3261C20.9543 13.8885 21.5478 13.6427 22.1667 13.6427M5.83333 13.6427C5.21449 13.6427 4.621 13.8885 4.18342 14.3261C3.74583 14.7637 3.5 15.3572 3.5 15.976V20.6427C3.5 21.2615 3.74583 21.855 4.18342 22.2926C4.621 22.7302 5.21449 22.976 5.83333 22.976H22.1667C22.7855 22.976 23.379 22.7302 23.8166 22.2926C24.2542 21.855 24.5 21.2615 24.5 20.6427V15.976C24.5 15.3572 24.2542 14.7637 23.8166 14.3261C23.379 13.8885 22.7855 13.6427 22.1667 13.6427M5.83333 13.6427V7.80933C5.83333 6.88107 6.20208 5.99083 6.85846 5.33445C7.51484 4.67808 8.40508 4.30933 9.33333 4.30933H18.6667C19.5949 4.30933 20.4852 4.67808 21.1415 5.33445C21.7979 5.99083 22.1667 6.88107 22.1667 7.80933V13.6427M7 22.976V25.3093M21 22.976V25.3093"
+                    stroke="#1DD100"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p><span id="leftsit">40</span> Seats left</p>
+              </div>
+            </div>
+
+            <!-- TOTAL TRAVEL INFORMATION SECTION  -->
+            <div class="rounded-3xl bg-[#F7F8F8] p-8">
+              <div
+                class="flex items-center justify-between border-b border-dashed border-[#03071233] pb-6"
+              >
+                <p class="font-raleway text-lg font-semibold text-[#03071299]">
+                  Route
+                </p>
+                <p class="font-raleway text-lg font-semibold text-[#030712]">
+                  Dhaka - Sylhet
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-dashed border-[#03071233] py-6"
+              >
+                <p class="font-raleway text-lg font-semibold text-[#03071299]">
+                  Departure Time
+                </p>
+                <p class="font-raleway text-lg font-semibold text-[#030712]">
+                  9:00 PM
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between pt-6 font-inter font-medium"
+              >
+                <p
+                  class="w-full max-w-64 rounded-xl bg-[#0307120D] py-4 text-center"
+                >
+                  Boarding Point - Laxmipur
+                </p>
+                <p
+                  class="w-full max-w-64 rounded-xl bg-[#0307120D] py-4 text-center"
+                >
+                  Dropping Point - Bogura
+                </p>
+                <p
+                  class="w-full max-w-64 rounded-xl bg-[#0307120D] py-4 text-center"
+                >
+                  Est. Time - 11 Hour
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- DIVIDER  -->
+          <div class="h-full">
+            <img src="./assets/images/info-devider.png" class="h-full" alt="" />
+          </div>
+          <!-- PRICE SECTION  -->
+          <div class="flex flex-col items-center gap-6">
+            <div class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="49"
+                viewBox="0 0 48 49"
+                fill="none"
+              >
+                <path
+                  d="M34 7.48936C37.0404 9.24473 39.5652 11.7695 41.3205 14.8099C43.0759 17.8503 44 21.2992 44 24.81C44 28.3207 43.0758 31.7696 41.3204 34.81C39.565 37.8504 37.0402 40.3752 33.9998 42.1305C30.9594 43.8858 27.5104 44.8099 23.9997 44.8099C20.4889 44.8098 17.04 43.8856 13.9997 42.1302C10.9593 40.3747 8.43458 37.8499 6.67927 34.8095C4.92396 31.769 3.99991 28.3201 4 24.8094L4.01 24.1614C4.12201 20.7073 5.1271 17.3413 6.92728 14.3913C8.72746 11.4414 11.2613 9.00826 14.2818 7.32912C17.3023 5.64998 20.7063 4.78215 24.162 4.81023C27.6177 4.83831 31.0072 5.76135 34 7.48936ZM21.578 16.2574C21.1038 15.3084 20.272 14.5868 19.2657 14.2511C18.2594 13.9154 17.1609 13.9932 16.212 14.4674L15.106 15.0214C14.6485 15.268 14.3051 15.6831 14.1484 16.1787C13.9917 16.6742 14.034 17.2113 14.2664 17.6761C14.4989 18.141 14.9031 18.4971 15.3936 18.6691C15.884 18.841 16.4222 18.8153 16.894 18.5974L18 18.0454L17.998 20.8094H16C15.5101 20.8094 15.0373 20.9893 14.6713 21.3148C14.3052 21.6403 14.0713 22.0889 14.014 22.5754L14 22.8094C14 23.3398 14.2107 23.8485 14.5858 24.2236C14.9609 24.5986 15.4696 24.8094 16 24.8094H17.998L18 30.8094C17.9999 32.3398 18.5846 33.8124 19.6346 34.9259C20.6845 36.0394 22.1202 36.7096 23.648 36.7994L24 36.8094H25C26.8565 36.8094 28.637 36.0719 29.9497 34.7591C31.2625 33.4464 32 31.6659 32 29.8094V28.8094C32 28.2789 31.7893 27.7702 31.4142 27.3951C31.0391 27.0201 30.5304 26.8094 30 26.8094H28C27.4696 26.8094 26.9609 27.0201 26.5858 27.3951C26.2107 27.7702 26 28.2789 26 28.8094L26.014 29.0434C26.0666 29.4898 26.2682 29.9055 26.586 30.2233C26.9039 30.5412 27.3196 30.7427 27.766 30.7954L27.83 30.7994L27.79 30.9134C27.5686 31.4727 27.1842 31.9525 26.6867 32.2906C26.1892 32.6287 25.6015 32.8095 25 32.8094H24C23.4696 32.8094 22.9609 32.5986 22.5858 32.2236C22.2107 31.8485 22 31.3398 22 30.8094L21.998 24.8094H30C30.4899 24.8093 30.9627 24.6294 31.3287 24.3039C31.6948 23.9784 31.9287 23.5299 31.986 23.0434L32 22.8094C32 22.2789 31.7893 21.7702 31.4142 21.3951C31.0391 21.0201 30.5304 20.8094 30 20.8094H21.998L22 18.0454C22 17.5493 21.9078 17.0576 21.728 16.5954L21.578 16.2574Z"
+                  fill="#1DD100"
+                />
+              </svg>
+            </div>
+            <div class="space-y-2 text-center font-raleway">
+              <p class="text-3xl font-bold text-[#030712]">550 Taka</p>
+              <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SELECT FULL SECTION  -->
+        <div
+          class="grid w-full grid-cols-[3fr_1.2fr] gap-8 rounded-3xl bg-white p-8"
+        >
+          <!-- SELECT SECTION  -->
+          <div class="border-r-2 border-dashed border-[#0307124D] pr-8">
+            <p
+              class="w-full border-b border-dashed border-b-[#03071233] pb-6 font-raleway text-2xl font-semibold text-[#030712]"
+            >
+              Select Your Seat
+            </p>
+            <div
+              class="flex items-center justify-between border-b border-dashed border-[#03071233] py-5 font-inter"
+            >
+              <div class="flex gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <path
+                    d="M5.83333 12.8333C6.45217 12.8333 7.04566 13.0792 7.48325 13.5168C7.92083 13.9543 8.16667 14.5478 8.16667 15.1667V17.5H19.8333V15.1667C19.8333 14.5478 20.0792 13.9543 20.5168 13.5168C20.9543 13.0792 21.5478 12.8333 22.1667 12.8333M5.83333 12.8333C5.21449 12.8333 4.621 13.0792 4.18342 13.5168C3.74583 13.9543 3.5 14.5478 3.5 15.1667V19.8333C3.5 20.4522 3.74583 21.0457 4.18342 21.4832C4.621 21.9208 5.21449 22.1667 5.83333 22.1667H22.1667C22.7855 22.1667 23.379 21.9208 23.8166 21.4832C24.2542 21.0457 24.5 20.4522 24.5 19.8333V15.1667C24.5 14.5478 24.2542 13.9543 23.8166 13.5168C23.379 13.0792 22.7855 12.8333 22.1667 12.8333M5.83333 12.8333V7C5.83333 6.07174 6.20208 5.1815 6.85846 4.52513C7.51484 3.86875 8.40508 3.5 9.33333 3.5H18.6667C19.5949 3.5 20.4852 3.86875 21.1415 4.52513C21.7979 5.1815 22.1667 6.07174 22.1667 7V12.8333M7 22.1667V24.5M21 22.1667V24.5"
+                    stroke="#030712"
+                    stroke-opacity="0.5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="text-lg font-medium text-[#03071280]">Available</p>
+              </div>
+              <div class="flex gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <path
+                    d="M5.83333 12.8333C6.45217 12.8333 7.04566 13.0792 7.48325 13.5168C7.92083 13.9543 8.16667 14.5478 8.16667 15.1667V17.5H19.8333V15.1667C19.8333 14.5478 20.0792 13.9543 20.5168 13.5168C20.9543 13.0792 21.5478 12.8333 22.1667 12.8333C22.7855 12.8333 23.379 13.0792 23.8166 13.5168C24.2542 13.9543 24.5 14.5478 24.5 15.1667V19.8333C24.5 20.4522 24.2542 21.0457 23.8166 21.4832C23.379 21.9208 22.7855 22.1667 22.1667 22.1667H5.83333C5.21449 22.1667 4.621 21.9208 4.18342 21.4832C3.74583 21.0457 3.5 20.4522 3.5 19.8333V15.1667C3.5 14.5478 3.74583 13.9543 4.18342 13.5168C4.621 13.0792 5.21449 12.8333 5.83333 12.8333Z"
+                    fill="#1DD100"
+                  />
+                  <path
+                    d="M5.83333 12.8333V7C5.83333 6.07174 6.20208 5.1815 6.85846 4.52513C7.51484 3.86875 8.40508 3.5 9.33333 3.5H18.6667C19.5949 3.5 20.4852 3.86875 21.1415 4.52513C21.7979 5.1815 22.1667 6.07174 22.1667 7V12.8333"
+                    fill="#1DD100"
+                  />
+                  <path d="M7 22.1667V24.5V22.1667Z" fill="#1DD100" />
+                  <path d="M21 22.1667V24.5V22.1667Z" fill="#1DD100" />
+                  <path
+                    d="M5.83333 12.8333C6.45217 12.8333 7.04566 13.0792 7.48325 13.5168C7.92083 13.9543 8.16667 14.5478 8.16667 15.1667V17.5H19.8333V15.1667C19.8333 14.5478 20.0792 13.9543 20.5168 13.5168C20.9543 13.0792 21.5478 12.8333 22.1667 12.8333M5.83333 12.8333C5.21449 12.8333 4.621 13.0792 4.18342 13.5168C3.74583 13.9543 3.5 14.5478 3.5 15.1667V19.8333C3.5 20.4522 3.74583 21.0457 4.18342 21.4832C4.621 21.9208 5.21449 22.1667 5.83333 22.1667H22.1667C22.7855 22.1667 23.379 21.9208 23.8166 21.4832C24.2542 21.0457 24.5 20.4522 24.5 19.8333V15.1667C24.5 14.5478 24.2542 13.9543 23.8166 13.5168C23.379 13.0792 22.7855 12.8333 22.1667 12.8333M5.83333 12.8333V7C5.83333 6.07174 6.20208 5.1815 6.85846 4.52513C7.51484 3.86875 8.40508 3.5 9.33333 3.5H18.6667C19.5949 3.5 20.4852 3.86875 21.1415 4.52513C21.7979 5.1815 22.1667 6.07174 22.1667 7V12.8333M7 22.1667V24.5M21 22.1667V24.5"
+                    stroke="#1DD100"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="text-lg font-medium text-[#1DD100]">Selected</p>
+              </div>
+            </div>
+
+            <!-- SEAT LIST  -->
+            <div
+              class="grid grid-cols-[auto_repeat(2,1fr)_.5fr_repeat(2,1fr)] items-center justify-items-end gap-6 pt-6 font-inter text-lg font-medium text-[#03071280]"
+            >
+              <!-- first row  -->
+
+              <p>A</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                A1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                A2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                A3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                A4
+              </button>
+              <!-- second row -->
+
+              <p>B</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                B1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                B2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                B3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                B4
+              </button>
+
+              <p>C</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                C1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                C2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                C3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                C4
+              </button>
+
+              <p>D</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                D1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                D2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                D3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                D4
+              </button>
+
+              <p>E</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                E1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                E2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                E3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                E4
+              </button>
+
+              <p>F</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                F1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                F2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                F3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                F4
+              </button>
+
+              <p>G</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                G1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                G2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                G3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                G4
+              </button>
+
+              <p>H</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                H1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                H2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                H3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                H4
+              </button>
+
+              <p>I</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                I1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                I2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                I3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                I4
+              </button>
+
+              <p>J</p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                J1</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                J2
+              </button>
+              <p></p>
+              <button
+                class="btn mr-2 w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                J3</button
+              ><button
+                class="btn w-full max-w-32 font-inter text-lg font-medium text-[#03071280]"
+                onclick="buttonClicked(this)"
+              >
+                J4
+              </button>
+            </div>
+          </div>
+          <!-- SELECTED DETAILS  -->
+          <div class="flex flex-col gap-6">
+            <p
+              class="border-b border-dashed border-[#03071233] pb-6 font-raleway text-2xl font-semibold text-[#030712]"
+            >
+              Select Your Seat
+            </p>
+            <!-- list of seat  -->
+            <div class="rounded-xl bg-[#F7F8F8] p-8">
+              <!-- header section  -->
+              <div
+                class="flex items-center justify-between border-b border-dashed border-[#03071233] pb-4"
+              >
+                <p class="font-inter font-medium text-[#030712]">Seat</p>
+                <p class="font-inter font-medium text-[#030712]">Class</p>
+                <p class="font-inter font-medium text-[#030712]">Price</p>
+              </div>
+              <!-- no seat selected  -->
+              <p
+                class="border-b border-dashed border-[#03071233] pb-4 pt-4 text-center text-3xl font-bold text-red-600"
+                id="noseat"
+              >
+                No seat selected
+              </p>
+              <!-- selected seat list  -->
+              <ul
+                class="border-b border-dashed border-[#03071233] py-4 font-inter text-[#03071299]"
+                id="classlist"
+              ></ul>
+              <!-- show total  -->
+              <div
+                class="flex items-center justify-between pt-4 font-inter font-medium text-[#030712]"
+              >
+                <p class="">Total Price</p>
+                <p class="">BDT <span id="totalbill">0</span></p>
+              </div>
+              <!-- coupon section  -->
+              <div class="relative mt-4">
+                <input
+                  type="text"
+                  class="selection: w-full rounded-xl bg-white p-5 py-4 placeholder:font-inter placeholder:text-sm placeholder:text-[#03071266] focus:outline-[#1DD100]"
+                  placeholder="Have any coupon?"
+                  id="coupon"
+                />
+                <button
+                  class="absolute right-2 top-1/2 w-max -translate-y-1/2 rounded-lg bg-[#1DD100] px-4 py-[10px] font-inter font-semibold text-white hover:bg-slate-600"
+                  id="couponbtn"
+                >
+                  Apply
+                </button>
+              </div>
+              <!-- Grand total  -->
+              <div
+                class="flex items-center justify-between pt-4 font-inter font-medium text-[#030712]"
+              >
+                <p class="">Grand Total</p>
+                <p class="">BDT <span id="grandbill">0</span></p>
+              </div>
+            </div>
+
+            <!-- passenger details  -->
+            <div class="grid gap-6">
+              <!-- input name  -->
+              <label for="name" class="grid gap-4">
+                <p class="font-inter font-semibold text-[#030712]">
+                  Passenger Name*
+                </p>
+                <input
+                  type="text"
+                  required
+                  placeholder="Enter your name"
+                  class="w-full rounded-xl border border-[#0307121A] p-6 py-5 placeholder:font-inter placeholder:text-base placeholder:text-[#03071266] focus:outline-[#1DD100]"
+                />
+              </label>
+              <!--  input number   -->
+              <label for="number" class="grid gap-4">
+                <p class="font-inter font-semibold text-[#030712]">
+                  Phone Number*
+                </p>
+                <input
+                  type="number"
+                  required
+                  placeholder="Enter your phone number"
+                  class="w-full rounded-xl border border-[#0307121A] p-6 py-5 placeholder:font-inter placeholder:text-base placeholder:text-[#03071266] focus:outline-[#1DD100]"
+                />
+              </label>
+              <!-- input mail  -->
+              <label for="email" class="grid gap-4">
+                <p class="font-inter font-semibold text-[#030712]">Email ID</p>
+                <input
+                  type="email"
+                  placeholder="Enter your email id"
+                  class="w-full rounded-xl border border-[#0307121A] p-6 py-5 placeholder:font-inter placeholder:text-base placeholder:text-[#03071266] focus:outline-[#1DD100]"
+                />
+              </label>
+              <button
+                class="rounded-xl border border-transparent bg-[#1DD100] px-8 py-4 font-raleway text-xl font-bold text-white hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100]"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
